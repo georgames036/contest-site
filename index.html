@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>競技プログラミングサイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>競技プログラミングサイト</h1>
+
+  <label>大問を選択：</label>
+  <select id="mainProblemSelect"></select>
+
+  <label>小問を選択：</label>
+  <select id="subProblemSelect"></select>
+
+  <label>言語を選択：</label>
+  <select id="languageSelect">
+    <option value="python">Python</option>
+    <option value="javascript">JavaScript</option>
+    <option value="cpp">C++</option>
+  </select>
+
+  <div id="problem"></div>
+
+  <h3>コードを書く</h3>
+  <textarea id="codeArea" rows="15" cols="70"></textarea><br>
+  <button id="runButton">実行</button>
+
+  <pre id="result"></pre>
+
+  <script src="main.js"></script>
+</body>
+</html>

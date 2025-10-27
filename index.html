@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>競技プログラミングサイト</title>
-<style>
-body { font-family: Arial, sans-serif; padding: 20px; }
-textarea { width: 100%; font-family: monospace; }
-button { margin-top: 10px; padding: 5px 10px; }
-pre { background: #f0f0f0; padding: 10px; }
-</style>
+  <meta charset="UTF-8">
+  <title>競技プログラミングサイト</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    textarea { width: 100%; height: 100px; }
+    button { margin-top: 10px; padding: 5px 10px; }
+    pre { background: #f0f0f0; padding: 10px; }
+    .problem { margin-bottom: 30px; }
+  </style>
 </head>
 <body>
+  <h1>競技プログラミング練習</h1>
 
-<h2>第1問A 足し算</h2>
-<p>問題文: ある整数Aが与えられるので、その2倍を出力してください。</p>
-<p>入力例: 21</p>
-<p>出力例: 42</p>
+  <div class="problem">
+    <h2>第1問 A：足し算</h2>
+    <p>問題文：ある整数 A の 2 倍を出力してください。</p>
+    <p>入力例1：21 → 出力例1：42</p>
+    <p>入力例2：11 → 出力例2：22</p>
 
-<textarea id="code" rows="5" cols="50">// ここに JavaScript コードを記述</textarea>
-<br>
-<button onclick="submitCode('1','A',document.getElementById('code').value)">提出</button>
+    <textarea id="code1A">window.alert(2 * Number(window.prompt('整数Aを入力してください')));</textarea>
+    <button id="submit1A">提出</button>
+    <pre id="result1A"></pre>
+  </div>
 
-<h2>提出結果</h2>
-<pre id="result"></pre>
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

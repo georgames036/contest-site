@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>さいと</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>競技プログラミングサイト</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; }
+textarea { width: 100%; font-family: monospace; }
+button { margin-top: 10px; padding: 5px 10px; }
+pre { background: #f0f0f0; padding: 10px; }
+</style>
 </head>
 <body>
-  <h1>さいと</h1>
 
-  <label>大問：</label>
-  <select id="mainProblemSelect"></select>
+<h2>第1問A 足し算</h2>
+<p>問題文: ある整数Aが与えられるので、その2倍を出力してください。</p>
+<p>入力例: 21</p>
+<p>出力例: 42</p>
 
-  <label>小問：</label>
-  <select id="subProblemSelect"></select>
+<textarea id="code" rows="5" cols="50">// ここに JavaScript コードを記述</textarea>
+<br>
+<button onclick="submitCode('1','A',document.getElementById('code').value)">提出</button>
 
-  <label>言語：</label>
-  <select id="languageSelect">
-    <option value="python">Python</option>
-    <option value="javascript">JavaScript</option>
-    <option value="cpp">C++</option>
-  </select>
+<h2>提出結果</h2>
+<pre id="result"></pre>
 
-  <div id="problem"></div>
-
-  <h3>コードを書く</h3>
-  <textarea id="codeArea" rows="15" cols="70"></textarea><br>
-  <button id="runButton">提出</button>
-
-  <pre id="result"></pre>
-
-  <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

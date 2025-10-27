@@ -53,7 +53,7 @@ document.getElementById("runButton").onclick = async () => {
   const lang = document.getElementById("languageSelect").value;
   const code = document.getElementById("codeArea").value;
 
-  const res = await fetch("YOUR_GAS_WEBAPP_URL", {
+  const res = await fetch("https://script.google.com/macros/s/AKfycbwwkSxDVgX00aAGG-rdh_7WwQRLB7ouBJaiJBUEO8snQl7ButI68blCtCVAkdvjx8whtw/exec", {
     method: "POST",
     body: JSON.stringify({ problemId: pid, subId: sid, lang, code }),
     headers: { "Content-Type": "application/json" }

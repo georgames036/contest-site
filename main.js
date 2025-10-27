@@ -1,6 +1,6 @@
 async function submitCode(problemId, subId, code) {
   try {
-    const res = await fetch("GASのWebアプリURLをここに貼る", {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbwKAdXpJwz7ncVjCwAzj1Qz50UJO_iO_5v6F96gRA5J2Xq6rGxiZsLnmX4L_ZexqslmAA/exec", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ problemId, subId, lang: "javascript", code })

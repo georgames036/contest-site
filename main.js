@@ -59,7 +59,7 @@ document.getElementById("runButton").onclick = async () => {
   document.getElementById("result").textContent = "⏳ 採点中...";
 
   try {
-    const res = await fetch("https://script.google.com/macros/s/AKfycbzC5Mb3ILmyzB1YWo-AFIGUFYjFVt8UCdD9MRGuol8CyIcuiKCnm0Ko8nfym5zYGybTrA/exec", {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbzPOAG0gpzhTYA2WFfGIvqoy9-bK1Fn7aH9fSwrk6qtm1dL2qx3O4tVK0FfdBwUReRzoQ/exec", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ problemId: pid, subId: sid, lang, code })
